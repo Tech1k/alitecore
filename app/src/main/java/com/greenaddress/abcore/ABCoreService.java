@@ -52,7 +52,7 @@ public class ABCoreService extends Service {
         final String version = Packages.getVersion(useDistribution);
 
         final Notification.Builder b = new Notification.Builder(this)
-                .setContentTitle("ABCore is running")
+                .setContentTitle("ALiteCore is running")
                 .setContentIntent(pI)
                 .setContentText(String.format("Version %s", version))
                 .setSmallIcon(R.drawable.ic_info_black_24dp)
@@ -139,7 +139,7 @@ public class ABCoreService extends Service {
             // used
             final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
             final String useDistribution = prefs.getString("usedistribution", "core");
-            final String daemon = "liquid".equals(useDistribution) ? "liquidd" : "bitcoind";
+            final String daemon = "litecoind";
             final ProcessBuilder pb = new ProcessBuilder(
                     String.format("%s/%s", path, daemon),
                     "--server=1",

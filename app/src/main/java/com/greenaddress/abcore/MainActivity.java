@@ -193,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
         final String useDistribution = prefs.getString("usedistribution", "core");
         getSupportActionBar().setSubtitle(getString(R.string.subtitle, useDistribution));
         final TextView mTvDaemon = findViewById(R.id.textViewDaemon);
-        final String daemonVersion = "knots".equals(useDistribution) ? Packages.BITCOIN_KNOTS_NDK : "liquid".equals(useDistribution) ? Packages.BITCOIN_LIQUID_NDK : Packages.BITCOIN_NDK;
+        final String daemonVersion = "knots".equals(useDistribution) ? Packages.BITCOIN_NDK;
         mTvDaemon.setText(getString(R.string.subtitle, useDistribution + " " + daemonVersion));
         mTvStatus.setText(getString(R.string.status_header, mDaemonStatus.toString()));
         mMsgHandler.postDelayed(runnableCode, 1000);

@@ -1,75 +1,64 @@
-ABCore - Android Bitcoin Core
-=============================
+ALiteCore - Android Litecoin Core
+=================================
 
-[![Build Status](https://travis-ci.org/greenaddress/abcore.svg?branch=master)](https://travis-ci.org/greenaddress/abcore)
+[![Build Status](https://travis-ci.org/tech1k/alitecore.svg?branch=master)](https://travis-ci.org/tech1k/alitecore)
 
-<a href="http://abco.re"> <img src="http://abco.re/assets/images/schema.png" alt="Infographic" width="650" height="650"></a>
+<a href="https://alitecore.com"> <img src="https://alitecore.com/assets/images/og-image.jpg" alt="ALiteCore Banner" width="477.5" height="250"></a>
 
-Web site: <a href="http://abco.re">abco.re</a>
+Website: <a href="https://alitecore.com">alitecore.com</a>
 
-Warning: This app is still in a very Proof of Concept/Alpha stage.
+Warning: This app is still in development.
 
-<a href="https://f-droid.org/packages/com.greenaddress.abcore/" target="_blank">
+<!--<a href="https://f-droid.org/packages/com.greenaddress.abcore/" target="_blank">
 <img src="https://f-droid.org/badge/get-it-on.png" height="90"/></a>
 <a href="https://play.google.com/apps/testing/com.greenaddress.abcore" target="_blank">
 <img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="90"/></a>
 
-If you want to try it, you can also get it directly from GitHub [here](https://github.com/greenaddress/abcore/releases/tag/v0.63alphaPoC).
+If you want to try it, you can also get it directly from GitHub [here](https://github.com/tech1k/alitecore/releases/).-->
 
-What is Android Bitcoin Core?
------------------------------
+What is Android Litecoin Core?
+------------------------------
 
-Android Bitcoin Core is an Android app that fetches bitcoin core daemon built for Android using the NDK and is meant to make it easier
-to run Bitcoin Core daemon node on always on Android set top box devices and home appliances as well as mobile devices.
+Android Litecoin Core is an Android app that fetches the litecoin core daemon built for Android using the NDK and is meant to make it easier
+to run a Litecoin Core daemon node on always on Android set top box devices and home appliances as well as mobile devices.
 
-The full node software (Core 0.18.1 and Knots 0.18.0 and Elements 0.17.0.1) is meant to be used as a personal node when on the go (either by using a mobile wallet that allows to connect to a remote and specific node or even directly on your mobile device).
+The full node software (Litecoin Core 0.18.1) is meant to be used as a personal node when on the go (either by using a mobile wallet that allows to connect to a remote and specific node or even directly on your mobile device).
 
-ABCore works on x86, x86_64, armhf and arm64 Android (any version from Lollipop onwards - sdk 21). Mips is not supported.
+ALiteCore works on x86, x86_64, armhf and arm64 Android (any version from Lollipop onwards - sdk 21). Mips is not supported.
 
 License
 -------
 
-ABCore is released under the terms of the MIT license. See [COPYING](COPYING) for more
+ALiteCore is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Privacy
 -------
 
-ABCore doesn't do any kind of phone home, doesn't have In-App Purchase or advertising.
+ALiteCore doesn't do any kind of phone home, doesn't have In-App Purchase or advertising.
 
-During the initial configuration it connects to Github to fetch the required binaries and once it is installed it only communicates with the rest of the Bitcoin network like any normal full node.
+During the initial configuration it connects to Github to fetch the required binaries and once it is installed it only communicates with the rest of the Litecoin network like any normal full node.
 
 Limitations
 -----------
 
-ABCore requires a fair amount of ram (tested with 2GB) and a fair amount of disk space (tested with 256GB for non pruned node) as well as a decent always on connection - 3G or 4G is not advised.
+ALiteCore requires a fair amount of ram (2GB reccomended) and a fair amount of disk space (~23GB for non pruned node) as well as a decent always on connection - 3G or 4G is not advised.
 
 We also do not advise to use this as a wallet at this time, we advise to use this as your personal blockchain anchor when on the go with wallets that support to set a personal node.
 
-The contributors of ABCore are not liable for any cost or damage caused by the app including but not limited to data charges/penalties.
+The contributors of ALiteCore are not liable for any cost or damage caused by the app including but not limited to data charges/penalties.
 
 Acknowledgement
 ---------------
 
 - Development
 
-Lawrence Nahum
-twitter.com/LarryBitcoin
+Kristian Kramer
+<a href="https://kristian-kramer.com">kristian-kramer.com</a>
 
-- Graphic Content
+- ABCore
 
-Ottavio Fontolan
-otta88.box (at) gmail (dot) com
+GreenAddress
+<a href="https://github.com/greenaddress">github.com/greenaddress</a>
 
-- Testing & UX
 
-Gabriele Domenichini
-twitter.com/gabridome
-
-- Community Manager
-
-Timothy Redaelli
-twitter.com/drizztbsd
-timothy.redaelli (at) gmail (dot) com
-
-Special thanks to the [Bitcoin Core dev team](https://bitcoincore.org/), the [Arch Linux](https://www.archlinux.org/) teams and to [Alessandro Polverini](https://github.com/Polve) for the [Java RPC client](https://github.com/Polve/JavaBitcoindRpcClient).

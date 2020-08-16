@@ -57,7 +57,7 @@ public class DownloadInstallCoreIntentService extends IntentService {
                     outputStream.write(String.format("# for external storage try: %s\n", f.getCanonicalPath()).getBytes());
             // Afaik ipv6 is broken on android, disable by default, user can change this
             // outputStream.write("onlynet=ipv6\n".getBytes());
-            outputStream.write(String.format("datadir=%s\n", String.format("%s/.bitcoin", Utils.getDir(c).getAbsolutePath())).getBytes());
+            outputStream.write(String.format("datadir=%s\n", String.format("%s/.litecoin", Utils.getDir(c).getAbsolutePath())).getBytes());
 
             IOUtils.closeQuietly(outputStream);
         } catch (final IOException e) {
@@ -94,7 +94,7 @@ public class DownloadInstallCoreIntentService extends IntentService {
             final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
             final String useDistribution = prefs.getString("usedistribution", "core");
-            final List<String> distro = "knots".equals(useDistribution) ? Packages.NATIVE_KNOTS : "liquid".equals(useDistribution) ? Packages.NATIVE_LIQUID : Packages.NATIVE_CORE;
+            final List<String> distro = "knots".equals(useDistribution) ? Packages.NATIVE_CORE;
 
             final String url = Packages.getPackageUrl(useDistribution, arch);
             final String filePath = Utils.getFilePathFromUrl(this, url);
@@ -133,7 +133,7 @@ public class DownloadInstallCoreIntentService extends IntentService {
 
             Utils.extractTarXz(new File(filePath), dir);
 
-            // bitcoin core & deps installed, configure it now
+            // litecoin core & deps installed, configure it now
             configureCore(this);
 
             // notify
@@ -178,7 +178,7 @@ public class DownloadInstallCoreIntentService extends IntentService {
             broadcastIntent.putExtra("ABCOREUPDATESPEED", bytesPerSec);
 
 
-        broadcastIntent.putExtra("ABCOREUPDATETXT", String.format("%s %s %s", upd, fileExtracted, "knots".equals(fileExtracted) ? Packages.BITCOIN_KNOTS_NDK : "liquid".equals(fileExtracted) ? Packages.BITCOIN_LIQUID_NDK : Packages.BITCOIN_NDK));
+        broadcastIntent.putExtra("ABCOREUPDATETXT", String.format("%s %s %s", upd, fileExtracted, Packages.BITCOIN_NDK));
 
 
         sendBroadcast(broadcastIntent);

@@ -67,7 +67,7 @@ public class LogActivity extends AppCompatActivity {
         toolbar.setSubtitle(getString(R.string.subtitle, useDistribution));
         setSupportActionBar(toolbar);
 
-        final String daemon = "liquid".equals(useDistribution) ? "/liquidv1/debug.log" : "/debug.log";
+        final String daemon = "/debug.log";
         mLogFile = new File(Utils.getDataDir(this) + (Utils.isTestnet(this) ? "/testnet3/debug.log" : daemon));
 
         mRecyclerView = findViewById(R.id.logsRecyclerView);

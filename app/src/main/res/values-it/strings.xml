@@ -1,15 +1,15 @@
 <resources>
     <string name="title_activity_settings">Configurazione</string>
     <string name="title_activity_download_settings">Configurazione Scaricamento</string>
-    <string name="pref_title_edit_bitcoin_conf">Modifica manualmente bitcoin.conf</string>
-    <string name="pref_header_conf">Configurazione Bitcoin</string>
+    <string name="pref_title_edit_bitcoin_conf">Modifica manualmente litecoin.conf</string>
+    <string name="pref_header_conf">Configurazione Litecoin</string>
     <string name="pref_header_conf_download">Configuratione scaricamento</string>
     <string name="pref_header_android">Configuratione aggiuntiva</string>
     <string name="title_activity_peer">Nodi</string>
-    <string name="download_core">Questa app richiede Bitcoin per funzionare. Tocca il bottone per far partire lo scaricamento e la configurazione di Bitcoin</string>
+    <string name="download_core">Questa app richiede Litecoin per funzionare. Tocca il bottone per far partire lo scaricamento e la configurazione di Litecoin</string>
     <string name="start">Fai partire il download</string>
     <string name="failedretry">Fallito, vuoi riprovare?</string>
-    <string name="waitfetchingconfiguring">Per piacere aspetta. Scaricamento e configurazione di Bitcoin &#8230;</string>
+    <string name="waitfetchingconfiguring">Per piacere aspetta. Scaricamento e configurazione di Litecoin &#8230;</string>
     <string name="switchcoreon">Porta Core ON</string>
     <string name="switchcoreoff">Porta Core OFF</string>
 </resources>

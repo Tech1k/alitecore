@@ -5,7 +5,7 @@ import java.util.List;
 
 class Packages {
 
-    final static String BITCOIN_NDK = "0.19.0.1";
+    final static String BITCOIN_NDK = "0.18.0.0";
     final static String BITCOIN_KNOTS_NDK = "0.18.1";
     final static String BITCOIN_LIQUID_NDK = "0.18.1.3";
 
@@ -30,7 +30,7 @@ class Packages {
             "6480784i686-linux-android35ebf1aca32caff99d7346ce93775d9fea8f2bd4cf57edcc78f0ff71b087c10c",
             "6656944x86_64-linux-android947f94562018a45cbea9efcc391489fd54f578343eeb8c7dd5b48529d2b93c15"
             );
-    private final static String URL = "https://github.com/greenaddress/bitcoin_ndk/releases/download/v0.19.0.1/%s_bitcoin%s.tar.xz";
+    private final static String URL = "https://github.com/tech1k/litecoin_ndk/releases/download/v0.18.0.0/%s_litecoin%s.tar.xz";
     private final static String URL_KNOTS = "https://github.com/greenaddress/bitcoin_ndk/releases/download/v0.19.0.1/%s_bitcoin%s.tar.xz";
     private final static String URL_LIQUID = "https://github.com/greenaddress/bitcoin_ndk/releases/download/v0.19.0.1/%s_%s.tar.xz";
 
