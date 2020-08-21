@@ -52,7 +52,7 @@
                 android:layout_alignParentEnd="true" android:linksClickable="true" android:autoLink="web"/>
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Development\n\tKristian Kramer\n\ttwitter.com/kristianjkramer\n\nSpecial thanks to the Litecoin Core Dev Team github.com/litecoin-project"
+                android:text="Development\n\tKristian Kramer\n\tkristian-kramer.com"
                 android:linksClickable="true"
                 android:autoLink="web|email"
                 android:layout_marginTop="25dp" android:layout_below="@+id/textViewContribs"
